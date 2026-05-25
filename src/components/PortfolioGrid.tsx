@@ -19,7 +19,7 @@ const PROJECTS = [
     title: "My World Is Gone", 
     category: "Storytime / Drama", 
     behanceId: "245782007",
-    ctr_note: "1.2M Views · 14% CTR",
+    ctr_note: "Maintained 14% Average CTR",
     behance: "https://www.behance.net/gallery/245782007/Project"
   },
   { 
@@ -27,7 +27,7 @@ const PROJECTS = [
     title: "Ultimate Tech 2024", 
     category: "Tech & Reviews", 
     behanceId: "195190751",
-    ctr_note: "Trending #3 · 18% CTR",
+    ctr_note: "+18% CTR on A/B Test",
     behance: "https://www.behance.net/gallery/195190751/Project"
   },
   { 
@@ -35,7 +35,7 @@ const PROJECTS = [
     title: "Crazy Obstacle Course", 
     category: "Gaming", 
     behanceId: "219381613",
-    ctr_note: "Short-form channel · +45% Click-through",
+    ctr_note: "+45% Click-Through Rate",
     behance: "https://www.behance.net/gallery/219381613/Yup-Miniature"
   },
   { 
@@ -43,7 +43,7 @@ const PROJECTS = [
     title: "Crypto Crash", 
     category: "Finance", 
     behanceId: "197266929",
-    ctr_note: "Doubled average views in 24h",
+    ctr_note: "+32% CTR Improvement",
     behance: "https://www.behance.net/gallery/197266929/Project"
   },
   { 
