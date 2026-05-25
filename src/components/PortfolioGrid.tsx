@@ -93,11 +93,6 @@ const PortfolioGrid = () => {
                   <p className={styles.ctrNote}>{project.ctr_note}</p>
                 </div>
               </div>
-              <div className={styles.info}>
-                <div className={styles.textStack}>
-                  <h3>{project.title}</h3>
-                </div>
-              </div>
             </a>
           ))}
         </div>

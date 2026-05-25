@@ -114,27 +114,6 @@
   transform: translateY(0);
 }
 
-.info {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.textStack h3 {
-  font-family: var(--font-body);
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--text-primary);
-  text-transform: none;
-  letter-spacing: 0;
-}
-
-.textStack .category {
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: var(--text-secondary);
-}
-
 @media (max-width: 768px) {
   .grid {
     gap: 24px;
