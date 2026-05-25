@@ -7,27 +7,19 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: 48px;
-  max-width: 900px;
+  align-items: center;
 }
 
-.title {
-  font-size: clamp(3rem, 6vw, 5rem);
-  color: var(--text-primary);
-}
-
-.desc {
-  font-size: clamp(1.25rem, 3vw, 2rem);
-  font-weight: 500;
-  color: var(--text-primary);
-  line-height: 1.4;
-  letter-spacing: -0.02em;
+.content {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
 }
 
 .socials {
   display: flex;
   flex-direction: column;
-  border-top: 1px solid var(--border-color);
 }
 
 .link {
@@ -36,16 +28,21 @@
   align-items: center;
   padding: 32px 0;
   font-family: var(--font-heading);
-  font-size: clamp(1.5rem, 4vw, 3rem);
-  font-weight: 900;
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: -0.02em;
   color: var(--text-primary);
   border-bottom: 1px solid var(--border-color);
   transition: opacity var(--transition-fast), padding-left var(--transition-fast);
 }
 
 .link:hover {
-  opacity: 0.5;
-  padding-left: 24px;
+  opacity: 0.6;
+  padding-left: 16px;
+}
+
+@media (max-width: 768px) {
+  .formGroup {
+    flex-direction: column;
+  }
 }

@@ -1,11 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@700;800;900&display=swap');
 
 :root {
-  /* Monochrome Minimalist Theme */
+  /* Light Theme (Default) */
   --bg-color: #fafafa;
+  --bg-color-secondary: #ffffff;
   --text-primary: #0a0a0a;
   --text-secondary: #52525b;
   --border-color: #e5e5e5;
+  
+  --accent-color: #ff0000;
+  --accent-hover: #cc0000;
   
   --font-heading: 'Outfit', sans-serif;
   --font-body: 'Inter', sans-serif;
@@ -14,9 +18,18 @@
   --transition-normal: 0.25s ease-in-out;
 }
 
+.dark {
+  /* Dark Theme */
+  --bg-color: #0f0f0f;
+  --bg-color-secondary: #18181b;
+  --text-primary: #f8fafc;
+  --text-secondary: #a1a1aa;
+  --border-color: #27272a;
+}
+
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 100px; /* Offset for fixed header */
+  scroll-padding-top: 100px;
 }
 
 * {
@@ -32,36 +45,17 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color var(--transition-normal), color var(--transition-normal);
 }
 
-/* Brutalist Headings */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
-  font-weight: 900;
   line-height: 1.1;
-  text-transform: uppercase;
-  letter-spacing: -0.02em;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-}
-
-.delay-100 { animation-delay: 100ms; opacity: 0; }
-.delay-200 { animation-delay: 200ms; opacity: 0; }
-.delay-300 { animation-delay: 300ms; opacity: 0; }
-
-/* Scroll Animations */
-.scroll-pop {
-  opacity: 0;
-  transform: translateY(40px) scale(0.95);
-  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.scroll-pop.in-view {
-  opacity: 1;
-  transform: translateY(0) scale(1);
 }
 
 button {
@@ -78,38 +72,53 @@ button {
   padding: 0 24px;
 }
 
-.brutalist-button {
+.delay-100 { animation-delay: 100ms; opacity: 0; }
+.delay-200 { animation-delay: 200ms; opacity: 0; }
+.delay-300 { animation-delay: 300ms; opacity: 0; }
+
+.scroll-pop {
+  opacity: 0;
+  transform: translateY(40px) scale(0.95);
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.scroll-pop.in-view {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Primary Button */
+.btn-primary {
   display: inline-block;
   background: var(--text-primary);
   color: var(--bg-color);
   padding: 16px 32px;
-  font-weight: 600;
-  font-size: 1rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  border: 2px solid var(--text-primary);
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 8px;
   transition: all var(--transition-fast);
 }
 
-.brutalist-button:hover {
-  background: var(--bg-color);
-  color: var(--text-primary);
+.btn-primary:hover {
+  background: var(--accent-color);
+  color: white;
+  transform: translateY(-2px);
 }
 
-.brutalist-button-outline {
+/* Secondary Button */
+.btn-secondary {
   display: inline-block;
   background: transparent;
   color: var(--text-primary);
   padding: 16px 32px;
-  font-weight: 600;
-  font-size: 1rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  border: 2px solid var(--text-primary);
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: 2px solid var(--border-color);
   transition: all var(--transition-fast);
 }
 
-.brutalist-button-outline:hover {
-  background: var(--text-primary);
-  color: var(--bg-color);
+.btn-secondary:hover {
+  border-color: var(--text-primary);
+  background: rgba(128, 128, 128, 0.05);
 }

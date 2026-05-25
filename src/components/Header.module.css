@@ -51,49 +51,48 @@
 .actions {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 24px;
 }
 
-.langSwitcher {
+.themeToggle {
+  font-size: 1.25rem;
   display: flex;
   align-items: center;
-  gap: 8px;
-  color: var(--text-secondary);
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.langSwitcher span:not(.separator) {
-  cursor: pointer;
-  transition: color var(--transition-fast);
-}
-
-.langSwitcher span:not(.separator):hover {
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--border-color);
   color: var(--text-primary);
+  transition: all var(--transition-fast);
+}
+
+.themeToggle:hover {
+  background: var(--text-secondary);
+}
+
+.langPill {
+  display: flex;
+  align-items: center;
+  background: var(--border-color);
+  border-radius: 20px;
+  padding: 4px;
+  position: relative;
+}
+
+.langPill span {
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 16px;
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+  z-index: 1;
 }
 
 .activeLang {
-  color: var(--text-primary) !important;
-}
-
-.separator {
-  color: var(--border-color);
-}
-
-.ctaBtn {
-  font-size: 0.9rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--text-primary);
-  border-bottom: 2px solid var(--text-primary);
-  padding-bottom: 2px;
-  transition: opacity var(--transition-fast);
-}
-
-.ctaBtn:hover {
-  opacity: 0.6;
+  background: var(--text-primary) !important;
+  color: var(--bg-color) !important;
 }
 
 @media (max-width: 768px) {

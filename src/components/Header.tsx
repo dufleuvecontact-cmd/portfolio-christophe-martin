@@ -2,10 +2,12 @@
 
 import React, { useState, useEffect } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
+import { useTheme } from '@/context/ThemeContext';
 import styles from './Header.module.css';
 
 const Header = () => {
   const { t, language, toggleLanguage } = useLanguage();
+  const { theme, toggleTheme } = useTheme();
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -39,13 +41,16 @@ const Header = () => {
         </nav>
 
         <div className={styles.actions}>
-          <button className={styles.langSwitcher} onClick={toggleLanguage} aria-label="Toggle Language">
+          <button className={styles.themeToggle} onClick={toggleTheme} aria-label="Toggle Theme">
+            {theme === 'light' ? '☾' : '☀'}
+          </button>
+
+          <button className={styles.langPill} onClick={toggleLanguage} aria-label="Toggle Language">
             <span className={language === 'fr' ? styles.activeLang : ''}>FR</span>
-            <span className={styles.separator}>/</span>
             <span className={language === 'en' ? styles.activeLang : ''}>EN</span>
           </button>
           
-          <a href="#contact" className={styles.ctaBtn} onClick={(e) => handleScrollTo(e, 'contact')}>
+          <a href="#contact" className="btn-primary" onClick={(e) => handleScrollTo(e, 'contact')}>
             {t('header.contact')}
           </a>
         </div>

@@ -1,59 +1,83 @@
 .portfolio {
   padding: 120px 0;
-  background: var(--bg-color);
-  border-top: 1px solid var(--border-color);
+  background: var(--bg-color-secondary);
 }
 
 .header {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
 .header h2 {
-  font-size: clamp(3rem, 6vw, 5rem);
+  font-size: clamp(2.5rem, 5vw, 4rem);
   color: var(--text-primary);
+  letter-spacing: -0.02em;
 }
 
 .header p {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   color: var(--text-secondary);
   max-width: 600px;
 }
 
-.grid {
-  display: flex;
-  overflow-x: auto;
-  gap: 48px;
-  padding-bottom: 32px;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  /* Hide scrollbar for cleaner look */
-  scrollbar-width: none; 
+.behanceLink {
+  display: inline-block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 8px;
+  transition: opacity var(--transition-fast);
 }
-.grid::-webkit-scrollbar {
-  display: none;
+
+.behanceLink:hover {
+  opacity: 0.7;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 48px;
+}
+
+.filterBtn {
+  padding: 8px 16px;
+  border-radius: 20px;
+  background: var(--bg-color);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all var(--transition-fast);
+}
+
+.filterBtn:hover {
+  background: var(--border-color);
+  color: var(--text-primary);
+}
+
+.filterBtn.active {
+  background: var(--text-primary);
+  color: var(--bg-color);
+  border-color: var(--text-primary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 32px;
 }
 
 .card {
   opacity: 0;
   transform: translateY(30px) scale(0.95);
-  flex: 0 0 85vw; /* Mobile size */
-  max-width: 500px;
-  aspect-ratio: 404 / 316;
-  border: 1px solid var(--border-color);
-  background: var(--border-color);
-  overflow: hidden;
-  transition: transform 0.4s ease-out;
-  scroll-snap-align: center;
-}
-
-@media (min-width: 768px) {
-  .card {
-    flex: 0 0 404px;
-    scroll-snap-align: start;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .cardPop {
@@ -61,28 +85,87 @@
 }
 
 @keyframes popInCard {
-  0% {
-    opacity: 0;
-    transform: translateY(30px) scale(0.95);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
+  0% { opacity: 0; transform: translateY(30px) scale(0.95); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
 }
 
-.card:hover {
-  transform: scale(1.02);
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 404 / 316;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  background: var(--border-color);
 }
 
-.iframe {
+.iframeContainer {
   width: 100%;
   height: 100%;
-  display: block;
+  transition: transform 0.4s ease-out;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  padding: 24px;
+  text-align: center;
+  pointer-events: none;
+}
+
+.card:hover .iframeContainer {
+  transform: scale(1.05);
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.ctrNote {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  transform: translateY(10px);
+  transition: transform 0.3s ease-out;
+}
+
+.card:hover .ctrNote {
+  transform: translateY(0);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.textStack h3 {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.textStack .category {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
 }
 
 @media (max-width: 768px) {
   .grid {
-    gap: 32px;
+    gap: 24px;
   }
 }

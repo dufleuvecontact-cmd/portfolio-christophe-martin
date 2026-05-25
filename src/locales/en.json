@@ -1,35 +1,55 @@
 {
   "header": {
     "home": "Home",
-    "portfolio": "My Work",
-    "about": "About",
-    "services": "Services",
-    "contact": "Contact"
+    "portfolio": "Portfolio",
+    "about": "Process & About",
+    "contact": "Work With Me"
   },
   "hero": {
+    "label": "YouTube Thumbnail Designer",
     "title": "I create YouTube thumbnails that click.",
-    "subtitle": "GFX Designer specialized in YouTube thumbnails. Transform your views with striking visuals.",
-    "cta": "See My Work"
+    "subtitle": "Custom thumbnails that boost CTR for creators in finance, self‑improvement, and commentary.",
+    "cta_primary": "Get a Thumbnail Quote",
+    "cta_secondary": "View Portfolio",
+    "trust": "Trusted by 3+ creators · and 1 artist"
   },
   "portfolio": {
     "title": "My Work",
-    "subtitle": "Some of my best recent projects."
+    "subtitle": "A selection of high-performing thumbnails across various niches.",
+    "link": "See full case study on Behance ↗"
+  },
+  "testimonials": {
+    "title": "Thumbnails used on videos with 1M+ views",
+    "quote1": "\"Christophe’s thumbnails doubled our click‑through rate on commentary videos.\"",
+    "author1": "John D., Creator"
   },
   "about": {
-    "title": "About Me",
-    "description": "I am Christophe Martin, a designer passionate about creating YouTube thumbnails that grab attention. I use advanced composition and color grading techniques to maximize your videos' CTR.",
-    "workflow": "My Process: Brief -> Design -> Revisions -> Delivery."
+    "title": "Process & About",
+    "story1": "I am Christophe Martin, a designer obsessed with YouTube analytics, visual hierarchy, and the psychology behind a click. I don't just make pretty images; I build custom visual hooks that stop the scroll.",
+    "story2": "When working with creators, my focus is speed and clarity. I provide quick replies, fast iterations, and a deep understanding of the YouTube algorithm so you can focus on making great videos."
   },
-  "services": {
-    "title": "My Services",
-    "service_1": "One-Shot Thumbnail",
-    "service_1_desc": "An ultra-personalized thumbnail for your next viral video.",
-    "service_2": "Monthly Pack",
-    "service_2_desc": "Up to 4 thumbnails per month to ensure your channel's consistency."
+  "process": {
+    "step1_title": "1. Brief",
+    "step1_desc": "We clarify your hook, title, and audience.",
+    "step2_title": "2. Concept",
+    "step2_desc": "2–3 thumbnail ideas to choose from.",
+    "step3_title": "3. Design",
+    "step3_desc": "Final high‑res thumbnail delivered in 24–48h.",
+    "step4_title": "4. Revisions",
+    "step4_desc": "Up to 2 rounds included.",
+    "services_title": "Services",
+    "services_list": "Single thumbnails · Thumbnail packs · Channel branding",
+    "pricing": "From 50€/thumbnail – request full rate card"
   },
   "contact": {
-    "title": "Let's Work Together",
-    "description": "Ready to skyrocket your views? Send me a message to discuss your next project.",
-    "or_dm": "Contact me directly on:"
+    "title": "Let's Talk",
+    "description": "Tell me about your next video.",
+    "value_prop": "Reply within 24 hours · English & French · Available for ongoing thumbnail packages.",
+    "form_name": "Name",
+    "form_email": "Email",
+    "form_channel": "Channel Link",
+    "form_needs": "What do you need?",
+    "form_budget": "Estimated Budget",
+    "form_submit": "Send Inquiry"
   }
 }

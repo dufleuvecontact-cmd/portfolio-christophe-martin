@@ -2,34 +2,54 @@
   "header": {
     "home": "Accueil",
     "portfolio": "Portfolio",
-    "about": "À propos",
-    "services": "Services",
-    "contact": "Contact"
+    "about": "Process & À Propos",
+    "contact": "Travailler avec moi"
   },
   "hero": {
+    "label": "Designer de Miniatures YouTube",
     "title": "Je crée des miniatures YouTube qui cliquent.",
-    "subtitle": "Designer GFX spécialisé en miniatures YouTube. Transformez vos vues avec des visuels percutants.",
-    "cta": "Voir mon travail"
+    "subtitle": "Des miniatures sur-mesure qui boostent le CTR des créateurs (Finance, Dev Personnel, Commentaires).",
+    "cta_primary": "Demander un devis",
+    "cta_secondary": "Voir le Portfolio",
+    "trust": "Fait ses preuves chez +3 créateurs · et 1 artiste"
   },
   "portfolio": {
     "title": "Mon Travail",
-    "subtitle": "Quelques-uns de mes meilleurs projets récents."
+    "subtitle": "Une sélection de miniatures performantes dans différentes niches.",
+    "link": "Voir l'étude de cas sur Behance ↗"
+  },
+  "testimonials": {
+    "title": "Des miniatures utilisées sur des vidéos à +1M vues",
+    "quote1": "\"Les miniatures de Christophe ont doublé notre taux de clic sur nos vidéos de commentaire.\"",
+    "author1": "John D., Créateur"
   },
   "about": {
-    "title": "À propos de moi",
-    "description": "Je suis Christophe Martin, designer passionné par la création de miniatures YouTube qui captent l'attention. J'utilise des techniques avancées de composition et de colorimétrie pour maximiser le CTR de vos vidéos.",
-    "workflow": "Mon Process : Brief -> Conception -> Révisions -> Livraison."
+    "title": "Process & À Propos",
+    "story1": "Je suis Christophe Martin, un designer obsédé par l'analytique YouTube, la hiérarchie visuelle et la psychologie du clic. Je ne fais pas que de belles images ; je conçois des accroches visuelles qui arrêtent le scroll.",
+    "story2": "Lorsque je travaille avec des créateurs, ma priorité est la rapidité et la clarté. Réponses rapides, itérations efficaces, et une compréhension profonde de l'algorithme YouTube pour que vous puissiez vous concentrer sur vos vidéos."
   },
-  "services": {
-    "title": "Mes Services",
-    "service_1": "Miniature One-Shot",
-    "service_1_desc": "Une miniature ultra-personnalisée pour votre prochaine vidéo virale.",
-    "service_2": "Pack Mensuel",
-    "service_2_desc": "Jusqu'à 4 miniatures par mois pour assurer la régularité de votre chaîne."
+  "process": {
+    "step1_title": "1. Brief",
+    "step1_desc": "Nous définissons l'accroche, le titre et l'audience.",
+    "step2_title": "2. Concept",
+    "step2_desc": "2–3 idées de miniatures proposées.",
+    "step3_title": "3. Design",
+    "step3_desc": "Miniature finale livrée en 24–48h.",
+    "step4_title": "4. Révisions",
+    "step4_desc": "Jusqu'à 2 allers-retours inclus.",
+    "services_title": "Services",
+    "services_list": "Miniature à l'unité · Packs de miniatures · Branding de chaîne",
+    "pricing": "À partir de 50€/minia – demandez la grille tarifaire"
   },
   "contact": {
-    "title": "Travaillons Ensemble",
-    "description": "Prêt à faire exploser vos vues ? Envoyez-moi un message pour discuter de votre prochain projet.",
-    "or_dm": "Contactez-moi directement sur :"
+    "title": "Parlons de votre projet",
+    "description": "Parlez-moi de votre prochaine vidéo.",
+    "value_prop": "Réponse sous 24h · Anglais & Français · Disponible pour des packs récurrents.",
+    "form_name": "Nom",
+    "form_email": "Email",
+    "form_channel": "Lien de la chaîne",
+    "form_needs": "Quels sont vos besoins ?",
+    "form_budget": "Budget estimé",
+    "form_submit": "Envoyer la demande"
   }
 }
