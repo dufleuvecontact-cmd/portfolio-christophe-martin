@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@800;900&display=swap');
+
+:root {
+  /* Monochrome Minimalist Theme */
+  --bg-color: #fafafa;
+  --text-primary: #0a0a0a;
+  --text-secondary: #52525b;
+  --border-color: #e5e5e5;
+  
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  
+  --transition-fast: 0.15s ease-out;
+  --transition-normal: 0.25s ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* Offset for fixed header */
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Brutalist Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.delay-100 { animation-delay: 100ms; opacity: 0; }
+.delay-200 { animation-delay: 200ms; opacity: 0; }
+.delay-300 { animation-delay: 300ms; opacity: 0; }
+
+/* Scroll Animations */
+.scroll-pop {
+  opacity: 0;
+  transform: translateY(40px) scale(0.95);
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.scroll-pop.in-view {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.brutalist-button {
+  display: inline-block;
+  background: var(--text-primary);
+  color: var(--bg-color);
+  padding: 16px 32px;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 2px solid var(--text-primary);
+  transition: all var(--transition-fast);
+}
+
+.brutalist-button:hover {
+  background: var(--bg-color);
+  color: var(--text-primary);
+}
+
+.brutalist-button-outline {
+  display: inline-block;
+  background: transparent;
+  color: var(--text-primary);
+  padding: 16px 32px;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 2px solid var(--text-primary);
+  transition: all var(--transition-fast);
+}
+
+.brutalist-button-outline:hover {
+  background: var(--text-primary);
+  color: var(--bg-color);
+}

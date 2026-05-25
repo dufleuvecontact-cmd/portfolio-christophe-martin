@@ -1,0 +1,35 @@
+{
+  "header": {
+    "home": "Home",
+    "portfolio": "My Work",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "I create YouTube thumbnails that click.",
+    "subtitle": "GFX Designer specialized in YouTube thumbnails. Transform your views with striking visuals.",
+    "cta": "See My Work"
+  },
+  "portfolio": {
+    "title": "My Work",
+    "subtitle": "Some of my best recent projects."
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I am Christophe Martin, a designer passionate about creating YouTube thumbnails that grab attention. I use advanced composition and color grading techniques to maximize your videos' CTR.",
+    "workflow": "My Process: Brief -> Design -> Revisions -> Delivery."
+  },
+  "services": {
+    "title": "My Services",
+    "service_1": "One-Shot Thumbnail",
+    "service_1_desc": "An ultra-personalized thumbnail for your next viral video.",
+    "service_2": "Monthly Pack",
+    "service_2_desc": "Up to 4 thumbnails per month to ensure your channel's consistency."
+  },
+  "contact": {
+    "title": "Let's Work Together",
+    "description": "Ready to skyrocket your views? Send me a message to discuss your next project.",
+    "or_dm": "Contact me directly on:"
+  }
+}

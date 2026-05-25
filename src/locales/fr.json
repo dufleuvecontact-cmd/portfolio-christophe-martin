@@ -1,0 +1,35 @@
+{
+  "header": {
+    "home": "Accueil",
+    "portfolio": "Portfolio",
+    "about": "À propos",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Je crée des miniatures YouTube qui cliquent.",
+    "subtitle": "Designer GFX spécialisé en miniatures YouTube. Transformez vos vues avec des visuels percutants.",
+    "cta": "Voir mon travail"
+  },
+  "portfolio": {
+    "title": "Mon Travail",
+    "subtitle": "Quelques-uns de mes meilleurs projets récents."
+  },
+  "about": {
+    "title": "À propos de moi",
+    "description": "Je suis Christophe Martin, designer passionné par la création de miniatures YouTube qui captent l'attention. J'utilise des techniques avancées de composition et de colorimétrie pour maximiser le CTR de vos vidéos.",
+    "workflow": "Mon Process : Brief -> Conception -> Révisions -> Livraison."
+  },
+  "services": {
+    "title": "Mes Services",
+    "service_1": "Miniature One-Shot",
+    "service_1_desc": "Une miniature ultra-personnalisée pour votre prochaine vidéo virale.",
+    "service_2": "Pack Mensuel",
+    "service_2_desc": "Jusqu'à 4 miniatures par mois pour assurer la régularité de votre chaîne."
+  },
+  "contact": {
+    "title": "Travaillons Ensemble",
+    "description": "Prêt à faire exploser vos vues ? Envoyez-moi un message pour discuter de votre prochain projet.",
+    "or_dm": "Contactez-moi directement sur :"
+  }
+}

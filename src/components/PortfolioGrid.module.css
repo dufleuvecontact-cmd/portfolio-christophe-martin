@@ -1,0 +1,88 @@
+.portfolio {
+  padding: 120px 0;
+  background: var(--bg-color);
+  border-top: 1px solid var(--border-color);
+}
+
+.header {
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.header h2 {
+  font-size: clamp(3rem, 6vw, 5rem);
+  color: var(--text-primary);
+}
+
+.header p {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+}
+
+.grid {
+  display: flex;
+  overflow-x: auto;
+  gap: 48px;
+  padding-bottom: 32px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  /* Hide scrollbar for cleaner look */
+  scrollbar-width: none; 
+}
+.grid::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+  flex: 0 0 85vw; /* Mobile size */
+  max-width: 500px;
+  aspect-ratio: 404 / 316;
+  border: 1px solid var(--border-color);
+  background: var(--border-color);
+  overflow: hidden;
+  transition: transform 0.4s ease-out;
+  scroll-snap-align: center;
+}
+
+@media (min-width: 768px) {
+  .card {
+    flex: 0 0 404px;
+    scroll-snap-align: start;
+  }
+}
+
+.cardPop {
+  animation: popInCard 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes popInCard {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    gap: 32px;
+  }
+}
