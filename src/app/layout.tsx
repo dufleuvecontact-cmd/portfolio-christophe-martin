@@ -10,6 +10,11 @@ const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 export const metadata: Metadata = {
   title: "Christophe Martin | GFX Designer & YouTube Thumbnails",
   description: "Portfolio of Christophe Martin, YouTube Thumbnail GFX Designer.",
+  icons: {
+    icon: [
+      { url: '/icon.svg', type: 'image/svg+xml' }
+    ]
+  }
 };
 
 export default function RootLayout({
