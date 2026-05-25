@@ -56,16 +56,9 @@ const PROJECTS = [
   }
 ];
 
-const CATEGORIES = ["All", "Finance", "Storytime / Drama", "Gaming", "Tech & Reviews", "Self Improvement"];
-
 const PortfolioGrid = () => {
   const { t } = useLanguage();
   const { ref, inView } = useInView({ threshold: 0.1 });
-  const [activeCategory, setActiveCategory] = useState("All");
-
-  const filteredProjects = activeCategory === "All" 
-    ? PROJECTS 
-    : PROJECTS.filter(p => p.category === activeCategory);
 
   return (
     <section id="portfolio" className={styles.portfolio} ref={ref}>
@@ -78,20 +71,8 @@ const PortfolioGrid = () => {
           </a>
         </div>
 
-        <div className={`${styles.filters} scroll-pop ${inView ? 'in-view' : ''}`}>
-          {CATEGORIES.map(cat => (
-            <button 
-              key={cat} 
-              className={`${styles.filterBtn} ${activeCategory === cat ? styles.active : ''}`}
-              onClick={() => setActiveCategory(cat)}
-            >
-              {cat}
-            </button>
-          ))}
-        </div>
-
         <div className={styles.grid}>
-          {filteredProjects.map((project, index) => (
+          {PROJECTS.map((project, index) => (
             <a 
               href={project.behance}
               target="_blank"
@@ -115,7 +96,6 @@ const PortfolioGrid = () => {
               <div className={styles.info}>
                 <div className={styles.textStack}>
                   <h3>{project.title}</h3>
-                  <span className={styles.category}>{project.category}</span>
                 </div>
               </div>
             </a>
