@@ -31,7 +31,7 @@ const Header = () => {
       <div className={`container ${styles.container}`}>
         <div className={styles.logo}>
           <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>
-            christophe martin
+            christo calm
           </a>
         </div>
         
